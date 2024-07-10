@@ -1,0 +1,50 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Update Stok Ayam</title>
+    <link rel="stylesheet" href="/assets/css/stok.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="/assets/img/logo.jpeg" alt="Logo Perusahaan">
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="tentang.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Menu Pesanan</a></li>
+                    <li><a href="stok.html">Stok</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <div class="container-2">
+                <h2>Update Stok Ayam</h2>
+                <p id="currentStokAyam">Stok Ayam Tersedia: Loading...</p> <!-- Tampilkan stok ayam saat ini -->
+                <form class="form" id="stokForm">
+                    <div class="input-container">
+                        <label for="stokAyam">Tambah Stok:</label>
+                        <input type="number" id="stokAyam" name="stokAyam" min="0" placeholder="Tambahkan Stok Ayam" required>
+                        <button class="submit" type="submit">Update Stok</button>
+                        <button id="deleteStokAyamButton" class="submit" type="button">Hapus Semua Stok</button>
+                        <button id="deleteOneStokAyamButton" class="submit" type="button">Hapus 1 Stok</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="/assets/js/stok.js"></script>
+</body>
+</html>

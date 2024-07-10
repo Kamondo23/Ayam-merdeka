@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Merdeka</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="/assets/img/logo.jpeg" alt="">
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="tentang.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Admin</h2>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Daftar Pesanan</a></li>
+                    <li><a href="stok.html">Stok</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Admin Dashboard</h1>
+            <p>Daftar Pesanan</p>
+            <div class="container-2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.Antrian</th>
+                            <th>Minuman</th>
+                            <th>Makanan</th>
+                            <th>Tambahan</th>
+                            <th>Paketan</th>
+                            <th>Harga</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderTable">
+                        <!-- Data akan ditambahkan di sini -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" style="text-align: right;">Total Keuntungan:</td>
+                            <td colspan="2" id="totalKeuntungan" style="text-align: right;">Rp 0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="/assets/js/admin.js"></script>
+</body>
+</html>

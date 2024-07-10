@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayam Merdeka</title>
+    <link rel="stylesheet" href="/assets/css/about.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="/assets/img/logo.jpeg" alt="Logo Perusahaan">
+        <nav class="nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                    <li><a href="tentang.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="user.html">Kembali</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h2>Buat Pesanan Anda</h2>
+            <p id="stokAyamUser">
+                Stok Ayam Tersedia: <span id="currentStokAyam">Loading...</span>
+            </p>            
+            <div class="container-2">
+                <form id="queueForm" class="form">
+                    <div class="input-container">
+                        <div id="queueNumber" class="queue-number">
+                            <input placeholder="Nomor Antrian" type="text" id="queueInput" readonly>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <select id="minuman" class="form_style">
+                            <option value="" disabled selected>Pilih Minuman</option>
+                            <option value="Es Teh">Es Teh</option>
+                            <option value="Markisa Squash">Markisa Squash</option>
+                            <option value="Melon Mojito">Melon Mojito</option>
+                            <option value="Amer">Amer</option>
+                            <option value="Sprite">Sprite</option>
+                            <option value="Fanta">Fanta</option>
+                            <option value="Es Jeruk">Es Jeruk</option>
+                            <option value="Timun Squash">Timun Squash</option>
+                            <option value="Moca Cola">Moca Cola</option>
+                            <option value="Coca Cola">Coca Cola</option>
+                            <option value="Air Mineral Botol">Air Mineral Botol</option>
+                            <option value="Air Mineral Gelas">Air Mineral Gelas</option>
+                        </select>
+                        <select id="makanan" class="form_style">
+                            <option value="" disabled selected>Pilih Makanan</option>
+                            <option value="Ayam Bakar+Nasi+Sambal Bawang">Ayam Bakar+Nasi+Sambal Bawang</option>
+                            <option value="Ayam Goreng+Nasi+Sambal Bawang">Ayam Goreng+Nasi+Sambal Bawang</option>
+                            <option value="Amer+Nasi+Saus Keju">Amer+Nasi+Saus Keju</option>
+                            <option value="Ayam Krispi+Nasi+Saus Sambel">Ayam Krispi+Nasi+Saus Sambel</option>
+                            <option value="Ayam Geprek+Nasi+Sambel Merah/Ijo">Ayam Geprek+Nasi+Sambel Merah/Ijo</option>
+                            <option value="Telur Kriwil+Nasi+Sambel Merah/Ijo">Telur Kriwil+Nasi+Sambel Merah/Ijo</option>
+                            <option value="Ayam Bakar/Goreng+Sambel Bawang">Ayam Bakar/Goreng+Sambel Bawang</option>
+                            <option value="Amer+Saus Keju">Amer+Saus Keju</option>
+                            <option value="Ayam Krispi/Geprek+Sambal Merah/Ijo">Ayam Krispi/Geprek+Sambal Merah/Ijo</option>
+                        </select>
+                        <select id="tambahan" class="form_style">
+                            <option value="" disabled selected>Pilih Tambahan</option>
+                            <option value="Telur Kriwil">Telur Kriwil</option>
+                            <option value="Nasi Putih">Nasi Putih</option>
+                            <option value="Hati Ampla">Hati Ampla</option>
+                            <option value="Leher">Leher</option>
+                            <option value="Ceker">Ceker</option>
+                            <option value="Tahu">Tahu</option>
+                            <option value="Kerupuk Kulit/Ikan">Kerupuk Kulit/Ikan</option>
+                            <option value="Kerupuk Biasa">Kerupuk Biasa</option>
+                        </select>
+                        <select id="paketan" class="form_style">
+                            <option value="" disabled selected>Pilih Paketan</option>
+                            <option value="Paket Ayam Bakar/Goreng">Paket Ayam Bakar/Goreng</option>
+                            <option value="Paket Amer">Paket Amer</option>
+                            <option value="Paket Krispi/Geprek">Paket Krispi/Geprek</option>
+                        </select>
+                        <input placeholder="Satuan Minuman" type="text" id="satuan_minuman">
+                        <input placeholder="Satuan Makanan" type="text" id="satuan_makanan">
+                        <input placeholder="Satuan Tambahan" type="text" id="satuan_tambahan">
+                        <input placeholder="Satuan Paketan" type="text" id="satuan_paketan">
+                        <input placeholder="Harga" type="text" id="harga" readonly>
+                    </div>
+                    <button class="submit" type="submit">Simpan</button>
+                </form>
+                <img id="menu" src="/assets/img/menu.jpeg" alt="Menu Makanan dan Minuman">
+            </div>
+        </main>
+    </div>
+    <script src="/assets/js/about.js"></script>
+</body>
+</html>
